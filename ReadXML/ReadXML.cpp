@@ -15,20 +15,21 @@ int main()
 
 	fin.open("address.xml");
 
-	if (fin.fail()) //opens the file
+	if (fin.fail()) // opens file
 	{
 		cout << "Opening file failed \n";
 		exit(1);
 	}
 
 	intro();
-	address(fin, line); //this is my function call
+	address(fin, line); // function call
 
 	return 0;
 }
 
 void intro()
 {
+	cout << "Randy Lee /// Chapter 8, XML Programming Project 13" << endl;
 	cout << "This program will output addresses only located in Palmdale:\n";
 }
 
